@@ -1,8 +1,12 @@
 const dropdownMenu = document.getElementById("dropdownMenu");
-const scrollIndicator = document.getElementById("scroll");
+const navContainer = document.getElementById("navContainer");
 
-function myFunction(x) {
-  x.classList.toggle("change");
+navContainer.addEventListener("click", function () {
+  myFunction();
+});
+
+function myFunction() {
+  navContainer.classList.toggle("change");
   if (dropdownMenu.style.display === "flex") {
     dropdownMenu.style.display = "none";
   } else {
@@ -10,8 +14,7 @@ function myFunction(x) {
   }
 }
 
-function showScroll() {
-  scrollIndicator.style.display = "block";
+function menuClick() {
+  dropdownMenu.style.display = "none";
+  navContainer.classList.toggle("change");
 }
-
-setInterval(showScroll(), 1000);
