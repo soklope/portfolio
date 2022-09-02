@@ -173,6 +173,34 @@ a {
   scroll-margin: 55px;
 }
 
+#bm3dCase {
+  background-color: #e6e6e6;
+  padding-left: 10px;
+}
+
+.flexLeftContainer {
+  display: flex;
+}
+
+.bulletpoint {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(255, 136, 0);;
+  transform: rotate(45deg);
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.caseText {
+  margin-left: 30px;
+  margin-top: 0;
+}
+
+.left {
+  margin-left: 20px;
+}
+
 .aboutExtra {
   display: flex;
   justify-content: space-around;
@@ -238,6 +266,10 @@ h5 {
   width: 95vw;
   background-color: #c4c4c4;
   display: block;
+}
+
+.left {
+  padding-left: 10px;
 }
 
 .container2 {
