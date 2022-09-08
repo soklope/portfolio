@@ -1,5 +1,6 @@
 const dropdownMenu = document.getElementById("dropdownMenu");
 const navContainer = document.getElementById("navContainer");
+const caseText = document.getElementsById("overlay").addEventListener("mouseover", mouseOver);
 
 navContainer.addEventListener("click", function () {
   myFunction();
@@ -18,3 +19,5 @@ function menuClick() {
   dropdownMenu.style.display = "none";
   navContainer.classList.toggle("change");
 }
+
+
