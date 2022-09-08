@@ -14,6 +14,10 @@ body {
   display: none;
 }
 
+#aboutDesktopBackground {
+  display: none;
+}
+
 main {
   margin-top: 75px;
 }
@@ -28,6 +32,10 @@ header {
   position: fixed;
   top: 0;
   z-index: 1;
+}
+
+.profilePicDesktop {
+  display: none;
 }
 
 h1,
@@ -117,10 +125,8 @@ a {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   position: static;
-  margin-top: 50px;
-  margin-left: 10px;
-  margin-right: 10px;
-  opacity: 30%;
+  margin-top: 100px;
+  opacity: 50%;
 }
 
 @keyframes move {
@@ -393,5 +399,106 @@ h5 {
 
   a {
     margin-left: 30px;
+    display: inline-block;
+    position: relative;
+  }
+
+  a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #707070;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  #about, #contact, #cases {
+    scroll-margin: 110px;
+    text-align: left;
+  }
+
+  #aboutDesktop {
+    display: grid;
+    gap: 5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    grid-template-areas: 
+    "pic fil fil fil . ."
+    "nap cos ado wcv . ."
+    ;
+  }
+
+  #pictureFrame {
+    display: flex;
+    grid-area: pic;
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+
+  #nameAndPlace {
+    display: flex;
+    grid-area: nap;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  #fillText {
+    display: flex;
+    grid-area: fil;
+    width: auto;
+  }
+
+  #codingSkills {
+    display: flex;
+    grid-area: cos;
+    width: auto;
+  }
+
+  #adobePrograms {
+    display: flex;
+    grid-area: ado;
+    width: auto;
+  }
+
+  #watchCv {
+    display: flex;
+    grid-area: wcv;
+    width: auto;
+  }
+
+  #about {
+    display: none;
+  }
+
+  #aboutDesktopBackground {
+    display: block;
+    background-color: #e6e6e6;
+    padding-top: 1px;
+    margin-top: 20vh;
+  }
+
+  .profilePicDesktop {
+    max-width: 200px;
+    max-height: 200px;
+    border: rgb(255, 136, 0);
+    border-style: solid;
+    border-width: 1px;
+    padding: 3px;
+    display: block;
+
   }
 }
