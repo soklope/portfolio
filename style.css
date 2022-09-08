@@ -10,6 +10,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+#desktopNav {
+  display: none;
+}
+
 main {
   margin-top: 75px;
 }
@@ -264,8 +268,19 @@ h5 {
 
 .casesPic {
   width: 95vw;
-  background-color: #c4c4c4;
   display: block;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .left {
@@ -349,4 +364,34 @@ h5 {
   max-width: 30px;
   margin-top: 5px;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #navContainer {
+    display: none;
+  }
+
+  #desktopNav {
+    display: flex;
+    margin-right: 5%;
+    font-size: 1.3em;
+  }
+
+  header {
+    height: 100px;
+  }
+
+  .logo {
+    margin-left: 5%;
+  }
+
+  a {
+    margin-left: 30px;
+  }
 }
