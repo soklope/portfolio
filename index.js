@@ -1,6 +1,5 @@
 const dropdownMenu = document.getElementById("dropdownMenu");
 const navContainer = document.getElementById("navContainer");
-const caseText = document.getElementsById("overlay").addEventListener("mouseover", mouseOver);
 
 navContainer.addEventListener("click", function () {
   myFunction();
@@ -20,4 +19,6 @@ function menuClick() {
   navContainer.classList.toggle("change");
 }
 
-
+function bm3dClick() {
+  location.replace("bm3d.html");
+}
