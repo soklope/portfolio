@@ -22,3 +22,11 @@ function menuClick() {
 function bm3dClick() {
   location.replace("bm3d.html");
 }
+
+function liClick() {
+  location.replace("https://www.linkedin.com/in/s%C3%B8ren-kloster-pedersen-aa9481220/");
+}
+
+function homeClick() {
+  location.replace("index.html");
+}

@@ -10,51 +10,53 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="img/logo.png" alt="SKP LOGO" />
+      <img class="logo" src="img/logo.png" alt="SKP LOGO" onclick="homeClick()"/>
+      <div id="desktopNav">
+        <a href="#aboutDesktop">OM MIG</a>
+        <a href="#cases">CASES</a>
+        <a href="#contact">KONTAKT</a>
+      </div>
+
       <div id="navContainer" class="container">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
+
       <nav id="dropdownMenu">
         <a href="index.html" onclick="menuClick()">OM MIG</a>
-        <a href="#cases" onclick="menuClick()">CASES</a>
+        <a href="index.html" onclick="menuClick()">CASES</a>
         <a href="#contact" onclick="menuClick()">KONTAKT</a>
       </nav>
     </header>
+
     <main>
-        <div id="bm3dCase">
-          <h4>BM3D</h4>
-          
-          <div class="flexLeftContainer">
-              <div class="bulletpoint"></div>
-              <h5>OM KLIENTEN</h5>
+        <div class="viewCase">   
+          <div class="flex">
+            <div>
+              <div class="flexLeftContainer">
+                  <div class="bulletpoint"></div>
+                  <h5 class="caseTitle"><b>BM3D</b></h5>
+              </div>
+    
+              <p class="caseText">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Amet magnam autem tempore, nihil ipsam repellat exercitationem 
+                ipsa impedit animi iste.
+              </p>
+            </div>
+            <img class="casesThumbnails" src="img/bm3dThumbnailS.png" alt="bm3d logo">
           </div>
-          <p class="caseText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet magnam autem tempore, nihil ipsam repellat exercitationem ipsa impedit animi iste.</p>
-          <img class="casesPic" src="img/bm3dThumbnailS.png" alt="bm3d logo">
-
-          <div class="flexLeftContainer">
-            <div class="bulletpoint"></div>
-            <h5>OM KLIENTEN</h5>
-          </div>
-          <p class="caseText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet magnam autem tempore, nihil ipsam repellat exercitationem ipsa impedit animi iste.</p>
-          <img class="casesPic" src="img/bm3dThumbnailS.png" alt="bm3d logo">
-
-          <div class="flexLeftContainer">
-            <div class="bulletpoint"></div>
-            <h5>OM KLIENTEN</h5>
-          </div>
-          <p class="caseText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet magnam autem tempore, nihil ipsam repellat exercitationem ipsa impedit animi iste.</p>
-          <img class="casesPic" src="img/bm3dThumbnailS.png" alt="bm3d logo">
-          </div>
+        </div>
     </main>
+
     <footer>
       <div id="contact">
         <h3 class="background"><span>KONTAKT</span></h3>
         <h5>SØREN K. PEDERSEN</h5>
-        <h5>tlf. 61 26 32 97</h5>
-        <h5>mail: skp2104@hotmail.com</h5>
-        <img class="someLogo" src="img/linkedin.png" alt="linkedin" />
+        <h5>61 26 32 97</h5>
+        <h5>skp2104@hotmail.com</h5>
+        <img class="someLogo" src="img/linkedin.png" alt="linkedin" onclick="liClick()" />
       </div>
     </footer>
   </body>
