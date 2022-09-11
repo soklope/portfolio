@@ -131,7 +131,7 @@ a {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   position: static;
-  margin-top: 100px;
+  margin-top: 15vh;
   opacity: 50%;
 }
 
