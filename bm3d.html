@@ -10,36 +10,58 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="img/logo.png" alt="SKP LOGO" />
+      <img class="logo" src="img/clopeLogo.png" alt="SKP LOGO" onclick="homeClick()"/>
+      <div id="desktopNav">
+        <a href="index.html">OM MIG</a>
+        <a href="index.html">CASES</a>
+        <a href="index.html">KONTAKT</a>
+      </div>
+
       <div id="navContainer" class="container">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
+
       <nav id="dropdownMenu">
-        <a href="#about" onclick="menuClick()">OM MIG</a>
-        <a href="#cases" onclick="menuClick()">CASES</a>
+        <a href="index.html" onclick="menuClick()">OM MIG</a>
+        <a href="index.html" onclick="menuClick()">CASES</a>
         <a href="#contact" onclick="menuClick()">KONTAKT</a>
       </nav>
     </header>
+
     <main>
-        <div id="bm3dCase">
-            <h4>BM3D</h4>
-            <div class="flexLeftContainer">
-                <div class="bulletpoint"></div>
-                <h5>OM KLIENTEN</h5>
+        <div class="viewCase">   
+          <div class="flex">
+            <div>
+              <div class="flexLeftContainer">
+                  <div class="bulletpoint"></div>
+                  <h5 class="caseTitle"><b>BM3D</b></h5>
+              </div>
+    
+              <p class="caseText">
+                BM3D er en nystartet virksomhed, placeret i Thisted, Thy. De specialiserer sig i 3d printede værktøjer, og leverer special ordre til diverse virksomheder. 
+                <br><br> BM3D er nye på markedet, og har derfor brug for et “digitalt visitkort”, der beskriver hvem de er, hvad de laver, og hvordan de samarbejder med deres partnere.<br><br>
+
+                Til at imødekomme deres forespørgsel, er der blevet researchet, designet og produceret en simpel hjemmeside, både til mobil og desktop, som formår at give et kort indtryk af virksomheden.
+                
+                <br><br>Mangel på yderligere kontaktoplysninger er efter klientens eget ønske.
+
+                <br><br><a href="https://bm3d.clope.dk/"><b>bm3d.dk</b></a>
+              </p>
             </div>
-            <p class="caseText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet magnam autem tempore, nihil ipsam repellat exercitationem ipsa impedit animi iste.</p>
-            <img class="casesPic" src="img/bm3d.jpg" alt="bm3d logo">
+            <img class="casesThumbnails" src="img/bm3dThumbnailS.png" alt="bm3d logo">
+          </div>
         </div>
     </main>
+
     <footer>
       <div id="contact">
         <h3 class="background"><span>KONTAKT</span></h3>
         <h5>SØREN K. PEDERSEN</h5>
-        <h5>tlf. 61 26 32 97</h5>
-        <h5>mail: skp2104@hotmail.com</h5>
-        <img class="someLogo" src="img/linkedin.png" alt="linkedin" />
+        <h5>61 26 32 97</h5>
+        <h5>skp2104@hotmail.com</h5>
+        <img class="someLogo" src="img/linkedin.png" alt="linkedin" onclick="liClick()" />
       </div>
     </footer>
   </body>
